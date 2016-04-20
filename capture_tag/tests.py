@@ -42,3 +42,4 @@ class CaptureTagTests(SimpleTestCase):
         self.assertRaises(TemplateSyntaxError, _render, '{% capture %}foo')
         self.assertRaises(TemplateSyntaxError, _render, '{% capture AS bar silent %}foo{% endcapture %}')
         self.assertRaises(TemplateSyntaxError, _render, '{% capture as bar SILENT %}foo{% endcapture %}')
+        self.assertRaises(TemplateSyntaxError, _render, '{% capture as bar silent foo %}foo{% endcapture %}')
