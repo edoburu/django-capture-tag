@@ -1,0 +1,10 @@
+Package authors:
+
+* Diederik van der Boor
+
+Inspired by:
+
+* https://djangosnippets.org/snippets/545/
+* https://gist.github.com/yuchant/1928063
+* https://github.com/nathanborror/django-basic-apps/blob/01b37fb28605504893811ffac89cb97852f2e0a4/basic/tools/templatetags/capture.py
+* https://bitbucket.org/benoitbryon/django-templateaddons/src/9a9576947e3f8f3beeaa35df5a86102142073837/templateaddons/templatetags/assign.py?at=default&fileviewer=file-view-default
