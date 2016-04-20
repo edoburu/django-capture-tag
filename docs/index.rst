@@ -80,7 +80,7 @@ Take configuration from extended templates:
     {% block home_url %}{% url 'user:profile' %}{% endblock %}
 
 Notice
-~~~~~
+~~~~~~
 
 When a value is used only once, this package is not needed.
 In such case, simply place the ``{% block .. %}`` at the proper location where contents is replaced.
