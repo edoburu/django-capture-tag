@@ -15,7 +15,7 @@ This can be useful for example to:
 
 
 Installation
-============
+------------
 
 Install the module from PyPI:
 
@@ -36,6 +36,19 @@ Load the tag in your template:
 .. code-block:: html+django
 
     {% load capture_tags %}
+
+
+Syntax
+------
+
+The following options are available:
+
+.. code-block:: html+django
+
+    {% capture %}...{% endcapture %}                    # output in {{ capture }}
+    {% capture silent %}...{% endcapture %}             # output in {{ capture }} only
+    {% capture as varname %}...{% endcapture %}         # output in {{ varname }}
+    {% capture as varname silent %}...{% endcapture %}  # output in {{ varname }} only
 
 
 Example usage
@@ -86,16 +99,3 @@ When a value is used only once, this package is not needed.
 In such case, simply place the ``{% block .. %}`` at the proper location where contents is replaced.
 All common Django template tags support the ``as variable`` syntax,
 such as ``{% url 'app:index' as home_url %}`` or ``{% trans "Foo" as foo_label %}``.
-
-
-Syntax
-------
-
-The following options are available:
-
-.. code-block:: html+django
-
-    {% capture %}...{% endcapture %}                    # output in {{ capture }}
-    {% capture silent %}...{% endcapture %}             # output in {{ capture }} only
-    {% capture as varname %}...{% endcapture %}         # output in {{ varname }}
-    {% capture as varname silent %}...{% endcapture %}  # output in {{ varname }} only
