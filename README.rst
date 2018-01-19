@@ -5,8 +5,6 @@ django-capture-tag
     :target: http://travis-ci.org/edoburu/django-capture-tag
 .. image:: https://img.shields.io/pypi/v/django-capture-tag.svg
     :target: https://pypi.python.org/pypi/django-capture-tag/
-.. image:: https://img.shields.io/pypi/dm/django-capture-tag.svg
-    :target: https://pypi.python.org/pypi/django-capture-tag/
 .. image:: https://img.shields.io/badge/wheel-yes-green.svg
     :target: https://pypi.python.org/pypi/django-capture-tag/
 .. image:: https://img.shields.io/pypi/l/django-capture-tag.svg
