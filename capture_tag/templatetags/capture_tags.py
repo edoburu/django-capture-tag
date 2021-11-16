@@ -3,7 +3,7 @@ from django.template import Library, Node, TemplateSyntaxError
 register = Library()
 
 
-@register.tag(name='capture')
+@register.tag(name="capture")
 def do_capture(parser, token):
     """
     Capture the contents of a tag output.
@@ -31,9 +31,9 @@ def do_capture(parser, token):
     bits = token.split_contents()
 
     # tokens
-    t_as = 'as'
-    t_silent = 'silent'
-    var = 'capture'
+    t_as = "as"
+    t_silent = "silent"
+    var = "capture"
     silent = False
 
     num_bits = len(bits)
@@ -48,13 +48,13 @@ def do_capture(parser, token):
         t_name, t_silent = bits
         silent = True
     else:
-        var = 'capture'
+        var = "capture"
         silent = False
 
-    if t_silent != 'silent' or t_as != 'as':
+    if t_silent != "silent" or t_as != "as":
         raise TemplateSyntaxError("'capture' node expects 'as variable' or 'silent' syntax.")
 
-    nodelist = parser.parse(('endcapture',))
+    nodelist = parser.parse(("endcapture",))
     parser.delete_first_token()
     return CaptureNode(nodelist, var, silent)
 
@@ -69,6 +69,6 @@ class CaptureNode(Node):
         output = self.nodelist.render(context)
         context[self.varname] = output
         if self.silent:
-            return ''
+            return ""
         else:
             return output

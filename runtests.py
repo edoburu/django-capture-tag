@@ -14,18 +14,14 @@ if not settings.configured:
             },
         },
         SITE_ID=1,
-        INSTALLED_APPS=(
-            "capture_tag",
-        ),
+        INSTALLED_APPS=("capture_tag",),
         MIDDLEWARE=(),
         TEMPLATES=[
             {
                 "BACKEND": "django.template.backends.django.DjangoTemplates",
                 "DIRS": (),
                 "OPTIONS": {
-                    "loaders": (
-                        "django.template.loaders.filesystem.Loader",
-                    ),
+                    "loaders": ("django.template.loaders.filesystem.Loader",),
                     "context_processors": (),
                 },
             },
