@@ -1,8 +1,8 @@
 django-capture-tag
 ==================
 
-.. image:: https://img.shields.io/travis/edoburu/django-capture-tag/master.svg?branch=master
-    :target: http://travis-ci.org/edoburu/django-capture-tag
+.. image:: https://github.com/edoburu/django-capture-tag/actions/workflows/tests.yaml/badge.svg?branch=master
+    :target: https://github.com/edoburu/django-capture-tag/actions/workflows/tests.yaml
 .. image:: https://img.shields.io/pypi/v/django-capture-tag.svg
     :target: https://pypi.python.org/pypi/django-capture-tag/
 .. image:: https://img.shields.io/pypi/l/django-capture-tag.svg
